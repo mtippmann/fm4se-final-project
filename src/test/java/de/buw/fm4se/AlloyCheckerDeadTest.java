@@ -25,35 +25,35 @@ class AlloyCheckerDeadTest {
 	@Test
 	void checkDeadSigsList() {
 		String fileName = "src/main/resources/list.als";
-		List<String> dead = AlloyChecker.findDeadSignatures(fileName, opt, rep);
+		List<String> dead = AlloySemanticComparision.findDeadSignatures(fileName, opt, rep);
 		assertEquals(0, dead.size());
 	}
 
 	@Test
 	void checkDeadSigsDead1() {
 		String fileName = "src/main/resources/dead1.als";
-		List<String> dead = AlloyChecker.findDeadSignatures(fileName, opt, rep);
+		List<String> dead = AlloySemanticComparision.findDeadSignatures(fileName, opt, rep);
 		assertEquals(1, dead.size());
 	}
 
 	@Test
 	void checkDeadSigsDead2() {
 		String fileName = "src/main/resources/dead2.als";
-		List<String> dead = AlloyChecker.findDeadSignatures(fileName, opt, rep);
+		List<String> dead = AlloySemanticComparision.findDeadSignatures(fileName, opt, rep);
 		assertEquals(2, dead.size());
 	}
 	
 	@Test
 	void checkDeadSigsDreadbury() {
 		String fileName = "src/main/resources/dreadbury.als";
-		List<String> dead = AlloyChecker.findDeadSignatures(fileName, opt, rep);
+		List<String> dead = AlloySemanticComparision.findDeadSignatures(fileName, opt, rep);
 		assertEquals(0, dead.size());
 	}
 
 	@Test
 	void checkDeadSigsHouses() {
 		String fileName = "src/main/resources/houses.als";
-		List<String> dead = AlloyChecker.findDeadSignatures(fileName, opt, rep);
+		List<String> dead = AlloySemanticComparision.findDeadSignatures(fileName, opt, rep);
 		assertEquals(0, dead.size());
 	}
 

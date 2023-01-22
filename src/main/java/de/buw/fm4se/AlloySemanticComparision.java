@@ -4,19 +4,20 @@ import java.util.List;
 import java.util.Map;
 
 import edu.mit.csail.sdg.alloy4.A4Reporter;
+import edu.mit.csail.sdg.alloy4.Err;
 import edu.mit.csail.sdg.ast.Command;
 import edu.mit.csail.sdg.ast.CommandScope;
 import edu.mit.csail.sdg.ast.Sig;
 import edu.mit.csail.sdg.translator.A4Options;
 
-public class AlloyChecker {
+public class AlloySemanticComparision {
 
-	public static List<String> findDeadSignatures(String fileName, A4Options options, A4Reporter rep) {
+	public static List<String> findPredicates(String fileName, A4Options options, A4Reporter rep) {
 		// TODO Task 1
 		return null;
 	}
 
-	public static List<String> findCoreSignatures(String fileName, A4Options options, A4Reporter rep) {
+	public static List<String> findFacts(String fileName, A4Options options, A4Reporter rep) {
 		// TODO Task 2
 		return null;
 	}
@@ -57,5 +58,15 @@ public class AlloyChecker {
 		}
 		return scope;
 	}
+	
+	
+	public static void main(String[] args) throws Err {
+		
+		
+		
+		
+		
+	}
+	
 
 }
